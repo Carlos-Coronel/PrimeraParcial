@@ -40,7 +40,9 @@
                 // Mostrar los resultados en una tabla HTML
                 foreach ($resultado as $fila) {
                     echo "<tr><td>" . $fila['id'] . "</td><td>" . $fila['titulo'] . "</td><td>" . $fila['carrera'] . "</td>
-                    <td><a href='eliminar.php?id=" . $fila['id'] . "'><i class='fas fa-trash-alt'></i> Eliminar</a><br><a href='modificar.php?id=" . $fila['id'] . "'><i class='fas fa-edit'></i> Modificar</a></td>
+                    <td><a href='eliminar.php?id=" . $fila['id'] . "'><i class='fas fa-trash-alt'></i> Eliminar</a><br><a href='modificar.php?id=" . $fila['id'] . "'><i class='fas fa-edit'></i> Modificar</a><br>
+                    <a href='mostrar.php?idmaterias=" . $fila['id'] . "'><i class='fas fa-file-alt'></i> Ver</a>
+                    </td>
                     </tr>";
                 }
                 ?>

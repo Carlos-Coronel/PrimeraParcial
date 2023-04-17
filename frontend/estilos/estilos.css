@@ -9,13 +9,30 @@ body {
 }
 
 .contenedor {
-    max-width: 800px;
+    width: 100%;
+    max-width: 21cm;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2cm;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.5cm rgba(48, 74, 223, 0.5);
+    border-radius: 0.5cm;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        max-width: 90%;
+        padding: 1.5cm;
+        border-radius: 0.3cm;
+    }
+}
+
+label {
+    font-weight: bold;
 }
 
 h1 {
     text-align: center;
+    color: #007bff;
 }
 
 .campo {
@@ -53,4 +70,59 @@ select {
     background-color: #007bff;
     color: white;
     font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Para centrar verticalmente los elementos */
+}
+
+.input-codigo {
+    width: 100px;
+    /* Puedes ajustar el tamaño según tu necesidad */
+}
+
+.ver-pagina {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-pagina:hover {
+    background-color: #0069d9;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.boton button {
+    padding: 20px 40px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.boton-actualizar {
+    background-color: #007bff;
+}
+
+.boton-cancelar {
+    background-color: red;
+}
+
+.boton button:hover {
+    opacity: 0.8;
 }
